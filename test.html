@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      background-color: #ccc;
+      font-family: acumin-pro-wide, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .ticker-outer-container, .ticker-section-outer-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+    }
+    .ticker-section-items-container {
+      flex: 0 0 auto;
+      display: flex;
+      animation: scroll linear infinite;
+      animation-duration: 22s;
+      flex-direction: row;
+    }
+    .text {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+    .ticker-item {
+      width: auto;
+      box-sizing: border-box;
+      display: flex;
+      padding: 0 6px;
+      text-align: center;
+      line-height: 1.25;
+    }
+    @keyframes scroll {
+      0% {
+        transform:translateX(0);
+      }
+      100% {
+        transform:translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="section-inner" style="padding: 40px 0">
+    <div class="ticker-section-outer-container">
+      <div class="ticker-section-items-container">
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+      </div>
+      <div class="ticker-section-items-container">
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+        <div class="ticker-item text">
+          AOI OHARA.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
